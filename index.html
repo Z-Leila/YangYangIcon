@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Heart</title>
+<meta name="keywords" content="LOVEHeart"/>
+<meta name="description" content="LOVEHeart"/>
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+		    <h1>愿所有夏日晚风 都吹来秋天的好日子</h1>
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*会不会有时候</span><br />
+			<span class="space"/><span class="comments">*憋了很多话想一吐为快.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			<span class="keyword">憋到最后</span>
+			<span class="keyword">却发现自己是一条鱼？</span>
+			<span class="comments">吐了一个又一个泡泡，</span>
+			最后都变成了省略号……<br />
+			<span class="comments">嗯，</span><br />
+			不管海里有多少个泡泡，<br />
+			<span class="comments">天上有一个大太阳就够了！</span><br />
+			[太阳] <br />
+			<span class="comments">TO  wuli 杨洋  </span><br />
+			<br>
+			You'll always be<br />
+			You will always be in here,In my life for all times 。<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					<img src="img/1.jpg" class="a">
+					<img src="img/2.jpg" class="b">		
+					<img src="img/3.jpg" class="c"> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+		<a href="#">....</a><br />
+		<a href="#">....</a><br />
+		
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 1, 1);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+</body>
+</html><script>QIHOO_UNION_F_SLOT={w:120, h:300, ls:"s45d8a66984",position:3, display:0,origin:1};</script><script src="http://s.lianmeng.360.cn/so/f.js" charset="utf-8"></script> 
